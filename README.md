@@ -1,43 +1,18 @@
 # PERSONALIZED PDF CHATBOTS WITH AMAZON BEDROCK
 ---
-## Solution Architecture
-![1.AWSServerlessChatbotArchitecture](static/images/1.Introduction/1.AWSServerlessChatbotArchitecture.png)
+## Welcome
+Welcome to the Personalized PDF Chatbots with Amazon Bedrock workshop! In this hands-on session, you will build an intelligent, AI-powered chatbot that can understand and answer user questions based on documents they upload themselves, such as PDFs, CSVs, and text files.
 
-## Components
-1. User: End user of the chatbot
-2. Web UI: User interface for chatbot interactions
-3. AWS Amplify: Manages the UI and authentication, specifically using Vue.js
-4. Amazon API Gateway: Handles API requests
-5. AWS Lambda (KB/LLM Functions): Executes serverless functions for Retrieval-Augmented Generation, Knowledge Base operations, and LLM interactions
-6. Amazon Bedrock: Provides access to AI models and services
-7. Large Language Models (Claude 3, Mistral, Llama, etc.): AI models that support responses
-8. Knowledge Bases: Stores structured information architecture
-9. Amazon S3: Object storage for documents and data
-10. Documents (pdf, csv, txt, etc.): Various file types for collection
-11. Amazon OpenSearch: Vector database and search engine for efficient similarity searching
-12. Amazon Cognito: User authentication and authorization
+The solution leverages a scalable, serverless architecture powered by Amazon Bedrock, integrating leading large language models, such as Claude 3, Mistral, and Llama, with Retrieval Augmentation (RAG) techniques. You will use AWS Lambda to run core functions for document parsing, knowledge retrieval, and chatbot responses. Knowledge is securely stored and queried from Amazon S3, OpenSearch, and a custom Knowledge Base, enhancing the chatbot’s ability to provide relevant and document-aware answers.
 
-## Workflow
-1. Users interact with the Web UI
-2. Requests are routed via API Gateway to Lambda functions
-3. Lambda functions use Bedrock to access LLM, and RAG operations, and interact with Knowledge Bases
-4. Knowledge is retrieved from Knowledge Bases, S3, OpenSearch
-5. The system combines different types of documents to enhance Knowledge Bases
+The UI is built using Vue.js and AWS Amplify, providing a modern, responsive interface, while Amazon Cognito ensures secure authentication and personalized access. Users interact through the Web UI, with all backend processing handled seamlessly through Amazon API Gateway and Lambda.
 
-## Key Features
-1. Scalable, serverless architecture
-2. Leverages multiple LLM models including Claude 3, Mistral, and Llama
-3. Combine Custom Knowledge Bases with Personal Data
-4. Secure Authentication with Cognito
-5. Flexible Document Search and Collection
-6. Front-end Built with Modern Frameworks (Vue.js) Using AWS Amplify
+By the end of this workshop, you will have a fully functional chatbot that combines LLM’s general intelligence with your own private, domain-specific data—perfect for enterprise, educational, or internal use cases.
 
-## Summary
-This architecture allows the AI-powered chatbot solution to scale on demand while providing intelligent responses based on both LLM knowledge and personal data (often confidential corporate or personal data). Using Vue.js with AWS Amplify ensures a responsive and efficient user interface.
+Let’s get started!
 
 ## Workshop
 🔻Workshop: https://levuxuananit.github.io/AWS-RAG-CHATBOT-WORKSHOP/
-
 ---
 
 > Linkedin [Le Vu Xuan An](https://www.linkedin.com/in/levuxuanan/) &nbsp;&middot;&nbsp;
